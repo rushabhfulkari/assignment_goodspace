@@ -1,0 +1,57 @@
+name: assignment_goodspace
+description: "A new Flutter project."
+
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.2.0 <4.0.0"
+
+dependencies:
+  auto_size_text: ^3.0.0
+  bloc: ^8.1.2
+  cupertino_icons: ^1.0.2
+  device_info_plus: ^9.1.1
+  double_back_to_close_app: ^2.1.0
+  equatable: ^2.0.5
+  flutter:
+    sdk: flutter
+  flutter_bloc: ^8.1.3
+  flutter_svg: ^2.0.9
+  http: ^1.1.2
+  jiffy: ^6.2.2
+  shared_preferences: ^2.2.2
+  top_snackbar_flutter: ^3.1.0
+
+dev_dependencies:
+  flutter_launcher_icons: ^0.13.1
+  flutter_lints: ^2.0.0
+  flutter_native_splash: ^2.3.8
+  flutter_test:
+    sdk: flutter
+
+# dart run flutter_native_splash:create
+flutter_native_splash:
+  color: "#379FFF"
+  image: assets/branding/splash.png
+
+# dart run flutter_launcher_icons
+flutter_launcher_icons:
+  android: "app_logo"
+  ios: false
+  image_path: "assets/branding/logo.png"
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/branding/
+    - assets/animations/
+    - assets/images/
+    - assets/svg/
+
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins_Regular.ttf
